@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*background: white;*/
+}
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}   
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-1{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-1 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-1 img:hover {
+    opacity: 0.9;
+}
+.col-1 h1 {
+    font-size: 70px;
+    line-height: 70px;
+    margin: 25px 0;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+.col-1 p {
+    font-size: 18px;
+    font-family: 'roboto', sans-serif;
+}
+.btn {
+    display: inline-flex;
+    background: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    font-family:'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+}
+/* Featured section */
+.categories {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    background-color: bisque;
+    padding: 20px 0;
+    
+}
+.col-2 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-2 img {
+    width: 100%;
+}
+.small-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-left: -5%;
+    padding-right: -5%; 
+}
+/*Featured Products section*/
+.small-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 --10px;
+}
+.col-3 {
+    flex: 1 1 25%;
+    padding: 10px;
+    min-width: 200px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+col-3 img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    cursor: auto;
+    
+}
+.col-3:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,16),
+    0 3px 6px rgba(0,0,0,16);
+    transform: translate(0px, -8px);
+    
+}
+/********Popular products captions,title,price,and ratings*******/
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 100px;
+    color: black;
+    font-family:'Roboto', 'Arial', sans-serif;
+    font-weight: bold;
+    padding-top: 30px;
+    font-size: 55px;
+}
+/*products name and rating*/
+h4 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    text-align: center;
+    color: #222f3e;
+
+}
+.col-3 p{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.rating ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+.rating ul li {
+    padding-top: 5px;
+}
+.fa {
+    font-size: 15px;
+    transition: 4s;
+    margin: 0;
+}
+.checked {
+    color: goldenrod;
+}
+    
