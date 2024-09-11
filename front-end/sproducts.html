@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Mabile Mart</title>
+<!--link to CSS files-->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+</head>
+<body>
+<header>
+<!--logo in the header-->                               
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/MOBILE_MART_NAME-white.PNG" alt="Logo">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Log In</a></li>
+            </ul>
+            <img src="images/cart_icon.png" alt="cart_icon">
+        </nav>
+</header>
+    <!----Search Section----->
+<!----------Products Listings-------------->
+<section id="sprodetails" class="section-p1">
+    <div class="single-pro-image">
+        <img src="images/iphone-15-pr0.webp" width="100%" id="mainImg" alt="">
+        
+        <div class="small-img-group">
+            <div class="small-img-col">
+                <img src="images/iphone 15 pro.avif" width="100%" class="smallImage" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="images/Apple-iPhone-15-Pro.jpg" width="100%" class="smallImage" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="images/iphone-15-and-iphone-15-plus-in-hand-2.webp" width="100%" class="smallImage" alt="">
+            </div>
+            <div class="small-img-col">
+                <img src="images/iphone-15-pr0.webp" width="100%" class="smallImage" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="single-pro-details">
+        <h3>Iphone 15 Pro</h3>
+        <h4>Product Description</h4>
+        <span>The ultra latest Iphone 15 is the first of its kind. It comes with tri-camera feature with 4k HD Resolution.
+            With its bluetooth capabilities, the transfer of files is first and secure. It has a 2-way authentication feature
+            that ensures maximum security of your data.
+        </span>
+        <h2>$128.00</h2>
+        <!--<input type="number" value="1"> -->
+        <button class="btn-2">Add to Cart</button>
+    </div>
+</section>
+<section id="banner" class="section-b1">
+    <h4>Luxury at your fingetips</h4>
+    <h2> From Top Brands All Over The World!!</h2>
+    <button class="btn-2">Explore Now</button>
+</section>
+<script>
+    var mainImg = document.getElementById("mainImg");
+    var smallImg = document.getElementsByClassName("smallImage");
+
+    smallImg[0].onclick = function(){
+        mainImg.src = smallImg[0].src
+    }
+    smallImg[1].onclick = function(){
+        mainImg.src = smallImg[1].src
+    }
+    smallImg[2].onclick = function(){
+        mainImg.src = smallImg[2].src
+    }
+</script>
+</body>
+</html> 

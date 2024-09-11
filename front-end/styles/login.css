@@ -20,6 +20,7 @@ body {
     background-image: url(/front-end/images/login.jpg);
     background-size: cover;
     background-position: auto;
+    overflow: hidden;
     
 }
 /*body {
@@ -38,17 +39,18 @@ body {
     box-sizing: border-box;
     background-color: var(--base-color);
     height: 100vh;
-    width: max(40%, 50px);
+    width: max(40%, 600px);
     padding: 10px;
     border-radius: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-left: 0;
+}
+   /* border-left: 0;
     margin-left: 100px;
     margin-top: 100px;
-}
+}*/
 h1 {
     font-size: 3rem;
     font-weight: 900;
@@ -57,21 +59,33 @@ h1 {
 form{
     width: min(400px, 100%);
     margin-top: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; 
-    padding: 10px; } /*space between elements*/
-}
-form  div{
+    gap: 10px; 
+}/*
+form div{
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
+    justify-content: center;
+}*/
 form label{
     flex-shrink: 0;
+    height: 50px;
+    width: 50px;
+    background-color: goldenrod;
+    fill: var(--base-color);
+    color: var(--base-color);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}/*
+form label{
+    flex-shrink: 0%;
     height: 50px;
     width: 50px;
     background-color: var(--accent-color);
@@ -83,12 +97,11 @@ form label{
     align-items: center;
     font-size: 1.5rem;
     font-weight: 500;
-}
+}*/
 form input{
     box-sizing: border-box;
     flex-grow: 1;
-    width: 100%;
-  /*  min-width: 0;*/
+    min-width: 0;
     height: 50px;
     padding: 1em;
     font: inherit;
@@ -97,7 +110,7 @@ form input{
     border-left: none;
     background-color: var(--input-color);
     transition: 150ms ease;
-    margin-top: 1px;
+    width: 100%;
 }
 form input:hover{
     border-color: var(--accent-color) ;
