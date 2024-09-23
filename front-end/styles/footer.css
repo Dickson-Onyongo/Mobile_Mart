@@ -1,9 +1,29 @@
-section .col-4 {
+footer {
+    width: auto;
+    height: 200px;
+    background-color: gainsboro;
+    display: block;
+
+}/*
+section{
     float: left;
+    margin: 0 1.5%;
     width: 30%;
-    margin-bottom: 0;
-    padding-right: 25px;
-    padding-left: 25px;
-    background: black;
 }
 
+aside {
+    float: right;
+    margin: 0 1.5%;
+    width: 30%;
+}
+<footer>
+    <div>
+        <!-----Contact Us------>
+        <div><h2>MOBILE MART</h2></div>
+        <!------Social Media----->
+        <div><h2>MOBILE MART</h2></div>
+        <!------Social Media----->
+        <div><h2>MOBILE MART</h2></div>
+    </div>
+</footer>    
+*/
